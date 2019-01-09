@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vlm" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+
+<head>
+<title>Freakshow</title>
+<!-- <meta name="viewport" content="width=device-with; initial-scale=1.0;maximum-scale=1.0"> -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style type="text/css">
+body {
+	background-color: #E3E3E3;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(31, 23, 109, 0.7);
+  width: 100%;
+}
+li {
+  float: none;
+  color: white;
+  display: inline-block;
+  padding: 14px 5px 14px 10px;
+  box-sizing: content-box;
+}
+li.line {
+  float: none;
+  padding: 0px 4px 0px 4px;
+  font-size: 20px;
+  /* border-right:1px solid #bbb; */
+  display: inline-block;
+}
+
+li:last-child {
+
+  border-right: none;
+  padding: 14px 0px 14px 25px;
+  display: inline-block;
+}
+li:first-child {
+
+  border-right: none;
+  padding: 14px 15px 14px 0px;
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  box-sizing: content-box;
+  text-decoration: none;
+  font-family: arial;
+}
+li a:hover {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  box-sizing: content-box;
+  text-decoration: underline;
+  font-family: arial;
+}
+	li:hover {
+	  background-color: #2E1E6D;
+	  color: #2E1E6D;
+	}
+	li.line:hover {
+	  background-color: rgba(31, 23, 109, 0);
+	  color: white;
+	}
+
+	p {
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		font-family: arial,sans-serif;
+		line-height: 18px;
+		color: black;
+	}
+	.article {
+		background-color: white;
+		margin :15px;
+	}
+	.fans {
+		text-align: center;
+		font-size: 20px;
+		font-family: arial,sans-serif;
+		line-height: 26px;
+		color: black;
+	}
+	p.grand {
+		font-size: 1.5em;
+		line-height: 0.5em;
+		font-family: arial,sans-serif;
+		color:black;
+	}
+
+	td {
+		color: black;
+	}
+	.titre {
+		text-align: center;
+		color: white;
+		font-size: 28px;
+		text-align: justify;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: arial,sans-serif;
+	}
+	.button  a:hover {
+		background-color:#5756a4;border:1px solid #5756a4;border-radius:4px;color:white;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;mso-hide:all;border-radius: 15px;border-width: 2px;font-weight: bold;
+	}
+	.button a {
+	background-color:#ffffff;border:1px solid #5756a4;border-radius:4px;color:#5756a4;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;mso-hide:all;border-radius: 15px;border-width: 2px;font-weight: bold;
+	}
+
+	.logo {
+		width: 66px;
+		height: 60px;
+		padding-top: 6px;
+		border-radius: 50%;
+		background-color: white;
+		
+	}
+	.vinyl {
+		color: black;
+	}
+	.logo:hover {
+		box-shadow:  3px 3px 5px #999;
+		box-sizing: content-box;
+		position: static;
+		overflow: hidden;
+		transform:scale(1.25);
+	}
+	img {
+		box-sizing: content-box;
+	}
+	img.video {
+		box-sizing: content-box;
+		border-width: 5px;
+		border-color: #FFFF;
+		border-style: solid dashed;
+	}
+	img.video:hover {
+		box-sizing: content-box;
+		border-width: 5px;
+		border-color: #D0D9FD;
+		border-style: solid dashed;
+	}
+
+</style>
+<script>
+function facebook() {
+  var a;
+  a =  document.getElementsByClassName("fa-facebook-f");
+  for(var i = 0;i < a.length;i++){
+  	var logo  =a[i].classList
+  setTimeout(function () {
+      logo.add("fa-rotate-90") ;
+    }, 500);
+  setTimeout(function () {
+      logo.remove("fa-rotate-90");
+      logo.add("fa-rotate-180") ;
+    }, 1000);
+  setTimeout(function () {
+  	  logo.remove("fa-rotate-180");
+      logo.add("fa-rotate-270") ;
+    }, 1500);
+  setTimeout(function () {
+  	logo.remove("fa-rotate-270");
+    }, 2000);
+  }
+}
+function instagram() {
+  var a;
+  a =  document.getElementsByClassName("fab fa-instagram");
+  for(var i = 0;i < a.length;i++){
+  	var logo  =a[i].classList
+  setTimeout(function () {
+      logo.add("fa-rotate-90") ;
+    }, 1000);
+  setTimeout(function () {
+      logo.remove("fa-rotate-90");
+      logo.add("fa-rotate-180") ;
+    }, 2000);
+  setTimeout(function () {
+  	  logo.remove("fa-rotate-180");
+      logo.add("fa-rotate-270") ;
+    }, 3000);
+  setTimeout(function () {
+  	logo.remove("fa-rotate-270");
+    }, 4000);
+  }
+}
+function twitter() {
+  var a;
+  a =  document.getElementsByClassName("fab fa-twitter");
+  for(var i = 0;i < a.length;i++){
+  	var logo  =a[i].classList
+  setTimeout(function () {
+      logo.add("fa-rotate-90") ;
+    }, 500);
+  setTimeout(function () {
+      logo.remove("fa-rotate-90");
+      logo.add("fa-rotate-180") ;
+    }, 1000);
+  setTimeout(function () {
+  	  logo.remove("fa-rotate-180");
+      logo.add("fa-rotate-270") ;
+    }, 1500);
+  setTimeout(function () {
+  	logo.remove("fa-rotate-270");
+    }, 2000);
+  }
+}
+function youtube() {
+  var a;
+  a =  document.getElementsByClassName("fab fa-youtube");
+  for(var i = 0;i < a.length;i++){
+  	var logo  =a[i].classList
+  setTimeout(function () {
+      logo.add("fa-rotate-90") ;
+    }, 1000);
+  setTimeout(function () {
+      logo.remove("fa-rotate-90");
+      logo.add("fa-rotate-180") ;
+    }, 2000);
+  setTimeout(function () {
+  	  logo.remove("fa-rotate-180");
+      logo.add("fa-rotate-270") ;
+    }, 3000);
+  setTimeout(function () {
+  	logo.remove("fa-rotate-270");
+    }, 4000);
+  }
+}
+facebook();
+setInterval(facebook, 2000);
+instagram();
+setInterval(instagram, 5000);
+twitter();
+setInterval(twitter, 2000);
+youtube();
+setInterval(youtube, 5000);
+</script>
+</head>
+<body   leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<table  border="0" width="590px" cellpadding="0" cellspacing="0" align="center" >
+	<tr>
+		<td bgcolor="#FFFFFF" align="center" valign="middle" height="50px">
+			<span style="color:white">Enceintes, batteries et platines vinyles, découvrez une sélection d'objets Vinyl Factory pour Noël</span><br>
+			To read this mail on your browser, <a href="http://images.relay-nm.com/Prod/AESI01_364533878/index__view.html" target="_blank">click</a>
+		</td>
+	</tr>
+	<tr>
+		<!-- header -->
+		    <td    >
+		      <!--[if gte mso 9]>
+		      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+		        <v:fill type="tile" src="https://www.vinylfactory.fr/telechargement_vf/newsletter/header.png" color="#FFF82A" />
+		        <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+		      <![endif]-->
+		      <div>
+		      	<table  border="0" width="590" cellpadding="0" cellspacing="0" align="center" style="background-image:url(https://www.vinylfactory.fr/telechargement_vf/newsletter/decembre2018/noel/fs/vf/header.png);background-repeat:no-repeat;background-size: 100%;">
+		      		<tbody>
+		      			<tr>
+		      				<td align="center">
+		      					<br><br>
+		      					<a href="https://www.angeleyes-eyewear.com/">
+		      					<img src="angeleyes.png" height="150px" width="590px">
+								</a>
+		      					<br><br><br>
+		      				</td>
+		      			</tr>
+						<tr>
+							<td  valign="bottom"  cellspacing="0" style="color: white">
+								
+								<ul>
+									<li>
+										<a href="https://www.vinylfactory.fr/" target="_blank" style="color: white">V I N Y L &nbsp; F A C T O R Y</a>
+									</li>
+									<li class="line">|</li>
+									<li>
+										<a href="https://freak-show.fr/" target="_blank" style="color: white" >F R E A K S H O W</a>
+									</li>
+									<li class="line">|</li>
+									<li>
+										<a href="https://www.angeleyes-eyewear.com/" target="_blank" style="color: white">A N G E L &nbsp; E Y E S</a>
+									</li>
+									
+								</ul>
+							</td>
+						</tr>
+		      		</tbody>
+		      	</table>
+		      	<table  border="0" width="590" cellpadding="0" cellspacing="0" align="center">
+		      		<tbody>
+						<tr>
+							<td style="text-align: center;" height="100%"  align="center" cellspacing="0" bgcolor="#FFFFFF">
+								<p>Angel Eyes wishes you a wonderful 2019 ! </p>
+							</td>
+						</tr>
+		      		</tbody>
+		      	</table>
+		      	<!--shopping list-->
+		      	<table  border="0" width="590" cellpadding="0" cellspacing="0" align="center" style="background-image:url(https://www.vinylfactory.fr/telechargement_vf/newsletter/decembre2018/noel/fs/vf/background.png);background-repeat: no-repeat;background-size: 100%; " >
+		      		<tbody>
+		      			<tr>
+		      				<td colspan="5" align="center" valign="middle" >
+		      					<br>
+		      					<span class="titre"> B O N N E &nbsp; A N N &#201; E &nbsp; A &nbsp; T O U S </span>
+		      					<!--reedus -->
+								<div class="article">
+									<br>
+									
+									<a href="https://youtu.be/POsRDPdrC78" target="_blank">
+									<img class="video" src="gif-carte-de-voeux.gif" width="450px">
+									</a>
+									<p>Chers partenaires, merci.<br>
+Merci de votre attachement à nos marques, merci de votre implication, merci de faire de Vinyl Factory et Freakshow des marques qui comptent chaque jour un peu plus.
+Tout au long de l'année qui arrive, Angel Eyes n'aura de cesse de vous surprendre, de vous émerveiller, de répondre à vos besoins.
+Une année 2019 qui s'annonce déjà exceptionnelle, et cela grâce à vous.
+<br>
+Toute la famille Angel Eyes vous souhaite une très belle année 2019 !</p>
+									<div class="button"><!--[if mso]>
+									  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://youtu.be/POsRDPdrC78" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="10%" strokecolor="#5756a4" fillcolor="#ffffff">
+									    <w:anchorlock/>
+									    <center style="color:#5756a4;font-family:sans-serif;font-size:13px;font-weight:bold;">D É C O U V R I R</center>
+									  </v:roundrect>
+									<![endif]--><a href="https://youtu.be/POsRDPdrC78"
+									style="">D É C O U V R I R</a></div>
+									<br><br>
+								</div>
+		      				</td>
+		      			</tr>
+						<tr>
+							<td align="center" colspan="8"  height="90px" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+									<div style="background-color:black;border:1px solid #5756a4;border-radius:4px;color:white;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:bold;line-height:40px;text-align:center;width:250px;-webkit-text-size-adjust:none;mso-hide:all;border-radius: 10px;border-width: 0px;font-weight: bold;cursor: default;text-decoration: underline;">
+										V I N Y L &nbsp;-&nbsp; F A C T O R Y
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="color: white;background-color:rgba(48, 1, 55, 0.7)" >
+								<a href="https://www.facebook.com/freakshoweyewear/" style=" text-decoration: none;">
+									<i  class="fab fa-facebook-f fa-3x  logo vinyl"  ></i>			
+								</a>
+							</td>
+
+							<td align="center" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								<a href="https://www.instagram.com/freakshoweyewear/"  style=" text-decoration: none;">
+								<i class="fab fa-instagram fa-3x  logo vinyl" ></i>
+								</a>
+							</td>
+
+							<td align="center"  style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								<a href="https://twitter.com/freakshoweyes" style=" text-decoration: none;">
+								<i class="fab fa-twitter fa-3x  logo vinyl" ></i>
+								</a>
+							</td>
+
+							<td align="center" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								<a href="https://www.youtube.com/channel/UCEKx3OXkz-yBUUDCCIzvW9w" style=" text-decoration: none;">
+								<i class="fab fa-youtube fa-3x  logo vinyl"></i>
+								</a>
+							</td>
+
+						</tr>
+		      			<tr>
+		      				<td align="center" valign="middle" height="10px" colspan="8" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								&nbsp;
+		      				</td>		
+		      			</tr>
+						<tr>
+							<td align="center" colspan="8"  height="90px" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+									<div style="background-color:#ffffff;border:1px solid #5756a4;border-radius:4px;color:#5756a4;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:bold;line-height:40px;text-align:center;width:250px;-webkit-text-size-adjust:none;mso-hide:all;border-radius: 10px;border-width: 0px;font-weight: bold;cursor: default;text-decoration: underline;">
+										F R E A K &nbsp;-&nbsp; S H O W
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="color: white;background-color:rgba(48, 1, 55, 0.7)" >
+								<a href="https://www.facebook.com/freakshoweyewear/" style=" text-decoration: none;">
+									<i  class="fab fa-facebook-f fa-3x  logo "  ></i>								
+								</a>
+							</td>
+
+							<td align="center" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								<a href="https://www.instagram.com/freakshoweyewear/"  style=" text-decoration: none;">
+								<i  class="fab fa-instagram fa-3x  logo "  ></i>		
+								</a>
+							</td>
+
+							<td align="center"  style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								<a href="https://twitter.com/freakshoweyes" style=" text-decoration: none;">
+								<i  class="fab fa-twitter fa-3x   logo "  ></i>		
+								</a>
+							</td>
+
+							<td align="center" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								<a href="https://www.youtube.com/channel/UCEKx3OXkz-yBUUDCCIzvW9w" style=" text-decoration: none;">
+								<i  class="fab fa-youtube fa-3x  logo"  ></i>		
+								</a>
+							</td>
+
+						</tr>
+		      			<tr>
+		      				<td align="center" valign="middle" height="10px" colspan="8" style="color: white;background-color:rgba(48, 1, 55, 0.7)">
+								&nbsp;
+		      				</td>		
+		      			</tr>
+		      			<tr>
+		      				<td bgcolor="#FFFFFF" align="center" valign="middle" height="50px" colspan="8" >
+								To unsubscribe from our newsletters, click <a href="http://images.relay-nm.com/Prod/AESI01_346155675/unsub_nm.html" >here</a> 
+		      				</td>		
+		      			</tr>
+		      		</tbody>
+		      	</table>
+
+		      </div>
+		      <!--[if gte mso 9]>
+		        </v:textbox>
+		      </v:rect>
+		      <![endif]-->
+		    </td>
+	</tr>
+
+</table>
+</body>
+</html>

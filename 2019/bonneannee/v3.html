@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vlm" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+
+<head>
+<title>Freakshow</title>
+<meta name="viewport" content="width=device-with; initial-scale=1.0; maximum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-color: #E3E3E3;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#3f3f3f;
+  width: 100%;
+}
+li {
+  float: none;
+
+  display: inline-block;
+  padding: 14px 5px 14px 10px;
+  box-sizing: content-box;
+}
+li.line {
+  float: none;
+  padding: 0px 4px 0px 4px;
+  font-size: 20px;
+  /* border-right:1px solid #bbb; */
+  display: inline-block;
+}
+
+li:last-child {
+
+  border-right: none;
+
+  display: inline-block;
+}
+li:first-child {
+
+  border-right: none;
+  padding: 14px 15px 14px 0px;
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: white;		
+  text-align: center;
+  box-sizing: content-box;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: arial;
+}
+
+
+
+	p {
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		font-family: arial,sans-serif;
+		line-height: 18px;
+		color: black;
+	}
+	.article {
+		background-color: white;
+		margin :15px;
+	}
+	.fans {
+		text-align: center;
+		font-size: 20px;
+		font-family: arial,sans-serif;
+		line-height: 26px;
+		color: black;
+	}
+	p.grand {
+		font-size: 1.5em;
+		line-height: 0.5em;
+		font-family: arial,sans-serif;
+		color:white;
+	}
+
+	td {
+		color: black;
+	}
+	.titre {
+		text-align: center;
+		color: white;
+		font-size: 28px;
+		text-align: justify;
+		/*text-transform: uppercase;*/
+		font-weight: bold;
+		font-family: arial,sans-serif;
+	}
+	.button  a:hover {
+			background-color:white;border:1px solid #f94206;border-radius:10px;color:#f94206;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;mso-hide:all;border-radius: 18px;border-width: 2px;
+	}
+	.button a {
+	background-color:#f94206;border:1px solid #f94206;border-radius:10px;color:white;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;mso-hide:all;border-radius: 18px;border-width: 2px;
+	}
+
+	.logo {
+		width: 40px;
+		height: 40px;
+	}
+	.logo:hover {
+		/* box-shadow:  3px 3px 5px #999; */
+		box-sizing: content-box;
+		position: static;
+		overflow: hidden;
+		transform:scale(1.25);
+	}
+	img {
+		box-sizing: content-box;
+	}
+	img.video {
+		box-sizing: content-box;
+		border-width: 5px;
+		border-color: #FFFF;
+		border-style: solid dashed;
+	}
+	img.video:hover {
+		box-sizing: content-box;
+		border-width: 5px;
+		border-color: #D0D9FD;
+		border-style: solid dashed;
+	}
+	@keyframes goRight {
+		  0% {
+		    transform: translateX(-100%);
+		  }
+		  50% {
+		    transform: translateY(-100%);
+		  }
+		  100% {
+		    transform: translateX(0%);
+		  }
+		}
+		.right {  
+		  animation: 3s ease-out 0.01s 1 goRight;
+	}
+	@keyframes rotating
+		{
+		from
+			{
+			transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			}
+		to
+			{
+			transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			}
+		}
+	@-webkit-keyframes rotating
+		{
+		from
+			{
+			transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			}
+		to
+			{
+			transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			}
+		}
+	.rotating
+		{
+		-webkit-animation: rotating 1s linear infinite;
+		-moz-animation: rotating 1s linear infinite;
+		-ms-animation: rotating 1s linear infinite;
+		-o-animation: rotating 1s linear infinite;
+		animation: rotating 1s linear infinite;
+		}
+	.rotating:hover
+		{
+			animation: rotating linear infinite;
+			animation-duration: 8s;
+		}
+		.networkbg {
+			background-color: #3f3f3f;
+			color: white;
+		}
+
+		.bg-article {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c63206+0,e2700c+51,e2700c+56,ebb905+100 */
+	background: rgb(198,50,6); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(198,50,6,1) 0%, rgba(226,112,12,1) 51%, rgba(226,112,12,1) 56%, rgba(235,185,5,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(198,50,6,1) 0%,rgba(226,112,12,1) 51%,rgba(226,112,12,1) 56%,rgba(235,185,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(198,50,6,1) 0%,rgba(226,112,12,1) 51%,rgba(226,112,12,1) 56%,rgba(235,185,5,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c63206', endColorstr='#ebb905',GradientType=0 ); /* IE6-9 */;
+		}
+		@keyframes neon-shop {
+		    0% {
+		        -webkit-filter: blur(0.5px);
+		        filter: blur(0.5px)
+		    }
+		    25% {
+		        -webkit-filter: blur(1px);
+		        filter: blur(1px)
+		    }
+		    50% {
+		        -webkit-filter: blur(1.5px);
+		        filter: blur(1.5px)
+		    }
+		    75% {
+		        -webkit-filter: blur(2px);
+		        filter: blur(2px)
+		    }
+		    100% {
+		        -webkit-filter: blur(3px);
+		        filter: blur(3px)
+		    }
+		}
+		img.titre_logo:hover {
+			animation: neon-shop 1.5s infinite;
+		}
+		.texte {
+			
+			line-height: 20px;
+			font-size: 12px;
+			font-family: cursive;
+	
+		}
+		.vl {
+		  border-left: 3px solid white;
+		  height: 93px;
+		}
+		.vl2 {
+		  border-left: 1px solid white;
+		  height: 20px;
+		}
+		.header-background {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c63206+0,e2700c+51,e2700c+56,ebb905+100 */
+background: rgb(198,50,6); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(198,50,6,1) 0%, rgba(226,112,12,1) 51%, rgba(226,112,12,1) 56%, rgba(235,185,5,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(198,50,6,1) 0%,rgba(226,112,12,1) 51%,rgba(226,112,12,1) 56%,rgba(235,185,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(198,50,6,1) 0%,rgba(226,112,12,1) 51%,rgba(226,112,12,1) 56%,rgba(235,185,5,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c63206', endColorstr='#ebb905',GradientType=0 ); /* IE6-9 */
+		}
+.overlay {
+  background-color: #FFFFFF;
+  border: 1px none #000000;
+  color: #000000;
+  padding: 0.01em;
+}
+.shadow {
+  background-color: #CCCCCC;
+}
+.shadow .overlay {
+  bottom: 2px;
+  position: relative;
+  right: 2px;
+}</style>
+</head>
+<body   leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#E3E3E3" >
+<table  border="0" width="590px" cellpadding="0" cellspacing="0" align="center" >
+	<tr>
+		<td bgcolor="#FFFFFF" align="center" valign="middle" height="50px">
+			<span style="color:white">Enceintes, batteries et platines vinyles, découvrez une sélection d'objets Vinyl Factory pour Noël</span><br>
+			Si ce mail ne se lit pas, <a href="http://images.relay-nm.com/Prod/AESI01_391089455/index__view.html" target="_blank">click</a>
+		</td>
+	</tr>
+	<tr>
+		<!-- header -->
+		    <td    >
+		      <!--[if gte mso 9]>
+		      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+		        <v:fill type="tile" src="https://www.vinylfactory.fr/telechargement_vf/newsletter/header.png" color="#FFF82A" />
+		        <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+		      <![endif]-->
+		      <div>
+		      	<table  border="0" width="590" cellpadding="0" cellspacing="0" align="center" class="header-background">
+		      		<tbody>
+		      			<tr>
+		      				<td align="center" width="590" height="150px">
+		      					<br>
+		      					<a href="https://www.angeleyes-eyewear.com/" style="text-decoration: none">
+		      					<img  class="right" src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/logo_angel_blanc.png"  width="300px">
+		      					</a>
+		      					
+		      				</td>
+		      			</tr>
+						<tr>
+							<td  valign="bottom"  cellspacing="0" style="color: white">
+								
+								<ul>
+									<li>
+										<a href="https://www.vinylfactory.fr/" target="_blank" ><img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/logoVF1lignevector_blc.png" width="100px"></a>
+									</li>
+									<li class="line"><div class="vl2"></div></li>
+									<li>
+										<a href="https://www.angeleyes-eyewear.com/" target="_blank"  ><img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/freashowhd.png" width="100px"></a>
+									</li>
+									
+								</ul>
+							</td>
+						</tr>
+		      		</tbody>
+		      	</table>
+		      	<!--shopping list-->
+		      	<table  border="0" width="590" cellpadding="0" cellspacing="0" align="center" class="bg-article" >
+		      		<tbody>
+		      			<tr>
+		      				<td colspan="5" align="center" valign="middle" >
+		      					<br>
+		      					<span class="titre"> B o n n e &nbsp; a n n é e &nbsp; à &nbsp; tous !</span>
+		      					<!--reedus -->
+		      					<div class="shadow" >
+								<div class="article overlay">
+									<br>
+									
+									<a href="https://youtu.be/POsRDPdrC78" target="_blank" style="text-decoration: none">
+									<img class="video" src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/gif-carte-de-voeux.gif" width="450px">
+									</a><br><br>
+									<div style="padding-right: 5%;padding-left: 5%">
+									<span class="texte">Chers partenaires, merci.<br>
+									Merci de votre attachement à nos marques, merci de votre implication, merci de faire de Vinyl Factory et Freakshow des marques qui comptent chaque jour un peu plus. Tout au long de l'année qui arrive, Angel Eyes n'aura de cesse de vous surprendre, de vous émerveiller, de répondre à vos besoins.<br>Une année 2019 qui s'annonce déjà exceptionnelle, et cela grâce à vous. <br>
+									Toute la famille Angel Eyes vous souhaite une très belle année 2019 !</span>
+									</div>
+									<br><br>
+									<div class="button"><!--[if mso]>
+									  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://youtu.be/POsRDPdrC78" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="10%" strokecolor="#5756a4" fillcolor="#ffffff">
+									    <w:anchorlock/>
+									    <center style="color:#5756a4;font-family:sans-serif;font-size:13px;font-weight:bold;">D É C O U V R I R</center>
+									  </v:roundrect>
+									<![endif]--><a href="https://youtu.be/POsRDPdrC78"
+									style="">Découvrir</a></div>
+									<br><br>
+
+								</div>
+								</div>
+								<p class="grand">Suivez-nous !</p>
+								
+		      				</td>
+		      			</tr>
+		      		</tbody>
+		      	</table>
+				<table border="0" width="590px" cellpadding="0" cellspacing="0" align="center" class="networkbg" >
+					<tbody>
+		      			<tr>
+		      				<td align="center" valign="middle" height="10px" colspan="5" height="90px" >
+								&nbsp;
+		      				</td>		
+		      			</tr>
+						<tr>
+							<td align="center">
+								<img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/logoVF1lignevector_blc.png" width="100px">
+								<ul>
+									<li>
+									<a href="https://www.facebook.com/vinylfactoryeyewear/" style=" text-decoration: none;">
+									<img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/facebook.png" class="logo " alt="facebook">
+									</a>
+									</li>
+									<li><a href="https://www.instagram.com/vinylfactoryeyewear/"  style=" text-decoration: none;">
+									<img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/instagram.png" class="logo " alt="instagram" >
+									</a>
+									</li>
+								</ul>
+								
+							</td>
+							<td align="left"><div class="vl"></div></td>
+							<td align="center" >
+								<img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/freashowhd.png" width="100px">
+								<ul>
+									<li>
+									<a href="https://www.facebook.com/freakshoweyewear/" style=" text-decoration: none;">
+									<img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/facebook.png" class="logo " alt="facebook">
+									</a>
+									</li>
+									<li><a href="https://www.instagram.com/freakshoweyewear/"  style=" text-decoration: none;">
+									<img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/instagram.png" class="logo " alt="instagram" >
+									</a>
+									</li>
+								</ul>
+							</td>
+							<td align="left"><div class="vl"></div></td>
+							<td align="center">
+								<img   src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/logo_angel_blanc.png"  width="100px">
+								<ul>
+
+									<li><a href="https://fr.linkedin.com/company/angeleyes-eyewear"  style=" text-decoration: none;">
+									<img src="https://www.vinylfactory.fr/telechargement_vf/newsletter/2019/linkedin-button.png" class="logo " alt="instagram" >
+									</a>
+									</li>
+								</ul>
+							</td>
+
+						</tr>
+		      			<tr>
+		      				<td align="center" valign="middle" height="10px" colspan="5" height="90px" >
+								&nbsp;
+		      				</td>		
+		      			</tr>
+					</tbody>
+				</table>
+		      </div>
+		      <!--[if gte mso 9]>
+		        </v:textbox>
+		      </v:rect>
+		      <![endif]-->
+		    </td>
+	</tr>
+
+</table>
+</body>
+</html>
